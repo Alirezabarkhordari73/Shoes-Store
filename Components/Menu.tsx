@@ -15,20 +15,21 @@ interface menuData {
   subMenu?: boolean;
 }
 
-const Menu = ({ showCatMenu, setShowCatMenu }: Props) => {
-  const data: menuData[] = [
-    { id: 1, name: "صفحه اصلی", url: "/" },
-    { id: 2, name: "درباره ما", url: "/about" },
-    { id: 3, name: "دسته بندی", url: "", subMenu: true },
-    { id: 4, name: "تماس با ما", url: "/contact" },
-  ];
+const data: menuData[] = [
+  { id: 1, name: "صفحه اصلی", url: "/" },
+  { id: 2, name: "درباره ما", url: "/about" },
+  { id: 3, name: "دسته بندی", url: "", subMenu: true },
+  { id: 4, name: "تماس با ما", url: "/contact" },
+];
 
-  const subMenuData = [
-    { id: 1, name: "جردن", doc_count: 11 },
-    { id: 2, name: "کتونی", doc_count: 8 },
-    { id: 3, name: "کتونی پیاده روی و دویدن", doc_count: 64 },
-    { id: 4, name: "کتونی فوتبال", doc_count: 107 },
-  ];
+const subMenuData = [
+  { id: 1, name: "جردن", doc_count: 11 },
+  { id: 2, name: "کتونی", doc_count: 8 },
+  { id: 3, name: "کتونی پیاده روی و دویدن", doc_count: 64 },
+  { id: 4, name: "کتونی فوتبال", doc_count: 107 },
+];
+
+const Menu = ({ showCatMenu, setShowCatMenu }: Props) => {
   return (
     <ul className="hidden md:flex items-center gap-8 font-medium text-black">
       {data.map((item) => (
