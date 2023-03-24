@@ -11,7 +11,11 @@ const CarouselItem = ({ slide, stopSlide, startSlide }: Prop) => {
       onMouseEnter={stopSlide}
       onMouseOut={startSlide}
     >
-      <img src={slide} alt="slide" className="w-full h-full object-cover" />
+      <img
+        src={slide}
+        alt="slide"
+        className="w-full h-full object-cover aspect-square"
+      />
     </div>
   );
 };

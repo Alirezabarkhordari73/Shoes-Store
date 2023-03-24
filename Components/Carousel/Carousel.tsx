@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from "react";
+import { FaShoppingCart } from "react-icons/fa";
+
 import CarouselItem from "./CarouselItem";
 import CarouselControls from "./CarouselControls";
 import CarouselIndicators from "./CarouselIndicators";
@@ -86,6 +88,10 @@ const Carousel = ({
         />
       )}
       {controls && <CarouselControls prev={prev} next={next} />}
+      <div className="bg-[#ffffff] w-[210px] h-[85px] flex justify-center items-center gap-2 text-[1.5rem] text-[#272727] absolute bottom-12 left-0 font-bold">
+        <FaShoppingCart className="text-[1.7rem] text-[#ff6363]" />
+        حالا بخرید
+      </div>
     </div>
   );
 };
