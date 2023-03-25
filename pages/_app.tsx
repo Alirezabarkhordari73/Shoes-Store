@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
+import FooterBannerSlider from "@/Components/FooterBannerSlider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Header />
       <Component {...pageProps} />
+      <FooterBannerSlider />
       <Footer />
     </>
   );
