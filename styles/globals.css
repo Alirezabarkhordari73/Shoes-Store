@@ -32,8 +32,8 @@ body{
 .Link{
     background-image: linear-gradient(
       to right,
-      #61addf,
-      #61addf 50%,
+      #47a6e6,
+      #47a6e6 50%,
       #292929 50%
     );
     background-size: 200% 100%;
@@ -49,7 +49,7 @@ body{
   
 .Link:before{
     content: '';
-    background: #61addf;
+    background: #47a6e6;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -116,15 +116,15 @@ body{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    bottom: 1.5em;
+    bottom: 9px;
     z-index: 2;
   }
   .carousel-indicator-item {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: none;
-    background: #fff;
-    opacity: 0.5;
+    background: #161616;
+    opacity: 0.4;
     margin: 0.2em;
     border-radius: 50%;
     cursor: pointer;
