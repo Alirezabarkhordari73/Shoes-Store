@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </Wrapper>
       <div className="flex justify-center items-start">
-        <div className="w-[85%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-14 px-5 md:px-0">
+        <div className="w-[85%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-14 px-5 md:px-0">
           <ProductCard />
           <ProductCard />
           <ProductCard />

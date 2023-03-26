@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import "swiper/css";
@@ -52,15 +53,15 @@ const FooterBannerSlider = (props: Props) => {
     },
   ];
   return (
-    <div className="w-full h-[220px] flex justify-center items-center bg-[#f7f7f7]">
+    <div className="w-full h-[240px] flex justify-center items-center bg-[#f7f7f7]">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
-        spaceBetween={50}
+        spaceBetween={40}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        slidesPerView={5}
+        slidesPerView={4}
         centeredSlides={true}
       >
         {slides.map((product) => (

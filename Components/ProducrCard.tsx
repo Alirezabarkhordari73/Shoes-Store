@@ -1,28 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { AiTwotoneStar } from "react-icons/ai";
+import StarRate from "./StarRate";
 
 const ProductCard = () => {
   return (
     <Link
       href={`/product`}
-      className="transform overflow-hidden relative bg-white duration-300 hover:scale-105 cursor-pointer"
+      className="transform overflow-hidden relative bg-white duration-500 transition-all hover:scale-105 cursor-pointer"
     >
-      <Image width={400} height={400} src="/slide-8.webp" alt="" />
+      <Image width={380} height={380} src="/slide-8.webp" alt="" />
       <div className="mt-3 flex flex-col justify-start">
         <div className="flex justify-between items-start">
           <h1 className="text-[0.9rem] text-gray-400">نام محصول</h1>
-          <div className="flex justify-center items-center">
-            <AiTwotoneStar className="text-yellow-500" />
-            <AiTwotoneStar className="text-yellow-500" />
-            <AiTwotoneStar className="text-yellow-500" />
-            <AiTwotoneStar className="text-yellow-500" />
-            <AiTwotoneStar className="text-yellow-500" />
-          </div>
+          <StarRate Ratevalue={4} />
         </div>
         <div className="pl-5 mt-2">
-          <p className="text-[#2e2e2e]">
+          <p className="text-[#2e2e2e] text-[0.9rem]">
             در کادر زیر هر متنی را که دوست دارید تایپ کنید تا ما آن را برایتان
             نگه داریم و همیشه در دسترس شما قرار دهیم
           </p>
