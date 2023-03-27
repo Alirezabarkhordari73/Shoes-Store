@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import StarRate from "./StarRate";
 
+import { GiShoppingCart } from "react-icons/gi";
+
 const ProductCard = () => {
   return (
     <Link
@@ -40,6 +42,7 @@ const ProductCard = () => {
       <div className="w-14 h-14 rounded-full bg-[#66b3e6] cursor-default absolute top-3 left-3 flex justify-center items-center text-white">
         جدید
       </div>
+      <GiShoppingCart className="absolute top-3 right-3 flex justify-center items-center text-[#8a8a8a] text-[1.8rem] hover:text-[#66b3e6] transition-all duration-200" />
     </Link>
   );
 };
